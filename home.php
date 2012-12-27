@@ -45,8 +45,8 @@
 			<p>Use the following button to download Joxy, either the latest version, or older versions.</p>
 			<center>
 				<div style="width: 75%;">
-					<a class="btn btn-primary btn-block" href="downloads/joxy-0.1.0.zip">Download Joxy 0.1.0</a>
-					<a class="btn btn-block" href="download.html">Download other versions</a>
+					<a class="btn btn-primary btn-block" href="<?= APP_PREFIX ?>/releases/joxy-0.1.0.zip">Download Joxy 0.1.0</a>
+					<a class="btn btn-block" href="<?= APP_PREFIX ?>/download">Download other versions</a>
 				</div>
 			</center>
 		</div>

@@ -11,7 +11,7 @@
 			<p>This is the latest released version of Joxy. It is (reasonably) stable. We recommend this version for normal use.</p>
 			<table class="table table-striped">
 				<tr><th width="80px">Version</th><th width="160px">Date</th><th>Major new features</th><th width="100px"></th></tr>
-				<tr><td>0.1.0</td><td>17 August 2012</td><td>Many new components</td><td><a href="downloads/joxy-0.1.0.zip">Download</a></td></tr>
+				<tr><td>0.1.0</td><td>17 August 2012</td><td>Many new components</td><td><a href="<?= APP_PREFIX ?>/releases/joxy-0.1.0.zip">Download</a></td></tr>
 			</table>
 			
 			<h3>Development version (unstable)</h3>
@@ -21,8 +21,9 @@
 			<p>These are older versions of Joxy. We do not recommend them because they contain less styled components, and probably more bugs.</p>
 			<table class="table table-striped">
 				<tr><th width="80px">Version</th><th width="160px">Date</th><th>Major new features</th><th width="100px"></th></tr>
-				<tr><td>0.0.3</td><td>12 May 2012</td><td>New components and native text rendering</td><td><a href="downloads/joxy-0.0.3.zip">Download</a></td></tr>
-				<tr><td>0.0.2</td><td>2 February 2012</td><td>New components</td><td><a href="downloads/joxy-0.0.2.zip">Download</a></td></tr>
+				<tr><td>0.0.3</td><td>12 May 2012</td><td>New components and native text rendering</td><td><a href="<?= APP_PREFIX ?>/releases/joxy-0.0.3.zip">Download</a></td></tr>
+				<tr><td>0.0.2</td><td>2 February 2012</td><td>New components</td><td><a href="<?= APP_PREFIX ?>/releases/joxy-0.0.2.jar">Download</a></td></tr>
+				<tr><td>0.0.1</td><td>December 2011</td><td>First version</td><td><a href="<?= APP_PREFIX ?>/releases/joxy-0.0.1.jar">Download</a></td></tr>
 			</table>
 		</div>
 	</div>
