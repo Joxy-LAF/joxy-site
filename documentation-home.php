@@ -52,7 +52,7 @@
 		</div>
 		<div class="span6">
 			<h3>Problems?</h3>
-			<p>If you encounter problems, the following page contains some common problems and how to solve them.</p>
+			<p>If you encounter problems, the following page contains information about how to find a solution.</p>
 			<center>
 				<div style="width: 50%;">
 					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/problems/">Solving problems</a>
