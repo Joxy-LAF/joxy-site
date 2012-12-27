@@ -17,7 +17,7 @@
 						<img alt="Theming in Joxy" src="<?= APP_PREFIX ?>/screenshots/theming.png">
 						<div class="carousel-caption">
 							<h4>Theming</h4>
-							<p>Joxy tries to detect which KDE theme you use, and uses that to style Java programs accordingly.</p>
+							<p>Joxy detects which KDE theme you use, and uses that to style Java programs accordingly.</p>
 						</div>
 					</div>
 					<div class="item">
