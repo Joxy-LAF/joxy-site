@@ -53,6 +53,11 @@ p {
 	color: #82C4FF;
 }
 
+.screenshot {
+	margin: 0 auto;
+	padding: 100px 0 100px 0;
+}
+
 .topspace {
 	margin-top: 1em;
 }

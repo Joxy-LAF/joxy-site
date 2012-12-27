@@ -1,0 +1,13 @@
+# Dutch descriptions
+21-12-2011-HighContrastTestGui1.png_NL === Een schermafdruk van ons eerste testprogramma, met een hoog contrast in KDE.
+21-12-2011-LowContrastTestGui1.png_NL  === Een schermafdruk van ons eerste testprogramma, met een laag contrast in KDE.
+21-12-2011-Netbeans.png_NL             === Een schermafdruk van Netbeans met onze Joxy LAF.
+29-01-2012-JoxyKDEAbout.png_NL         === Een voorproefje voor versie 0.0.2.
+29-01-2012-JOSM.png_NL                 === Het programma JOSM met de Joxy LAF.
+
+# English (default) descriptions
+21-12-2011-HighContrastTestGui1.png_EN === A screenshot of our first test GUI with contrast set to high.
+21-12-2011-LowContrastTestGui1.png_EN  === A screenshot of our first test GUI with contrast set to low.
+21-12-2011-Netbeans.png_EN             === A screenshot of Netbeans with our Joxy LAF applied to it.
+29-01-2012-JoxyKDEAbout.png_EN         === A preview of the 0.0.2 release.
+29-01-2012-JOSM.png_EN                 === The JOSM program with the Joxy LAF.
