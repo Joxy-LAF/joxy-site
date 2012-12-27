@@ -12,6 +12,18 @@
 		<div class="span4">
 			<h3>Getting Joxy</h3>
 			<p>To get Joxy, you can either download it precompiled or compile the source code yourself.</p>
+		</div>
+		<div class="span4">
+			<h3>Installing Joxy</h3>
+			<p>If you have a compiled version of Joxy (either self-compiled or precompiled), we recommend that you install the resulting files into your Java folder.</p>
+		</div>
+		<div class="span4">
+			<h3>Using Joxy</h3>
+			<p>After installing you can apply the Joxy look and feel to applications. This page explains how to do that.</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span4">
 			<center>
 				<div style="width: 75%;">
 					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/download/">Downloading Joxy</a>
@@ -20,8 +32,6 @@
 			</center>
 		</div>
 		<div class="span4">
-			<h3>Installing Joxy</h3>
-			<p>If you have a compiled version of Joxy (either self-compiled or precompiled), we recommend that you install the resulting files into your Java folder.</p>
 			<center>
 				<div style="width: 75%;">
 					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/install/">Installing Joxy</a>
@@ -29,16 +39,14 @@
 			</center>
 		</div>
 		<div class="span4">
-			<h3>Using Joxy</h3>
-			<p>After installing you can apply the Joxy look and feel to applications. This page explains how to do that.</p>
 			<center>
 				<div style="width: 75%;">
 					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/usage/">Applying Joxy to a program</a>
 				</div>
 			</center>
 		</div>
-	</div><br>
-	<div class="row">
+	</div>
+	<div class="row topspace">
 		<div class="span3">
 			&nbsp; <!--padding-->
 		</div>

@@ -49,6 +49,10 @@ p {
 	color: #82C4FF;
 }
 
+.topspace {
+	margin-top: 1em;
+}
+
 .upper-navbar > .btn {
 	border-top: 0;
 }
