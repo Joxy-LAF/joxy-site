@@ -2,13 +2,14 @@
 	background-image: url("konqi-duke.png");
 	background-repeat: no-repeat;
 	background-position: bottom left;
-	position: absolute;
-	margin-left: -600px;
-	left: 30%;
-	top: 0%;
-	width: 200%;
-	height: 100%;
+	position: fixed;
+	left: -100px;
+	bottom: 0;
+	width: 650px;
+	height: 323px;
 	z-index: -1;
+	margin: 0;
+	padding: 0;
 	opacity: 0.25;
 	overflow: hidden;
 }
