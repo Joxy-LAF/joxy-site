@@ -11,7 +11,7 @@
 			<p>This is the latest released version of Joxy. It is (reasonably) stable. We recommend this version for normal use.</p>
 			<table class="table table-striped">
 				<tr><th width="80px">Version</th><th width="160px">Date</th><th>Major new features</th><th width="100px"></th></tr>
-				<tr><td>0.1.0</td><td>17 Augustus 2012</td><td>Many new components</td><td><a href="downloads/joxy-0.1.0.zip">Download</a></td></tr>
+				<tr><td>0.1.0</td><td>17 August 2012</td><td>Many new components</td><td><a href="downloads/joxy-0.1.0.zip">Download</a></td></tr>
 			</table>
 			
 			<h3>Development version (unstable)</h3>
