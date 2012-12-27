@@ -35,7 +35,35 @@
 				
 				where <code>somename</code> is the name of the directory to put the source in. Execute this command. Now the source code is available for you to compile in the folder you created.</p>
 				
-				<p><b>TO DO: describe a way to get a certain Joxy version (revert to a tag).</b></p>
+				<h3>Get a specific version of Joxy</h3>
+				<p>It may be that you want to compile a specific version of Joxy yourself, for example the latest stable release, or an older release for testing purposes. Now, this is possible by using the tags provided by Git. We use Git tags to identify versions of Joxy. Unfortunately, we figured out how to do this only after having released version 0.0.2, so the first tag available is for version 0.0.3.</p>
+				
+				<p>The first thing you may want to do, is see what versions you have to choose from. This can be done as follows:
+<pre>$ git tag
+0.0.3
+0.1.0</pre>
+				Please note here that the given output is an example, there may be more versions available when you run it.</p>
+				
+				<p>Now, you can get the code for a version listed by executing <code>$ git checkout [version]</code>. For example, going to version 0.1.0 could look like this:
+<pre>$ git checkout 0.1.0
+Note: checking out '0.1.0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at b7cb104... Merge branch 'master' of ssh://git.code.sf.net/p/joxy/code</pre></p>
+
+				<p>When you are done, you can revert to the newest code as follows:
+<pre>$ git checkout master 
+Previous HEAD position was b7cb104... Merge branch 'master' of ssh://git.code.sf.net/p/joxy/code
+Switched to branch 'master'</pre>
+				After executing this, you are up-to-date again. Please refer to the excellent <a target="_blank" href="http://git-scm.com/docs">Git documentation</a> for more details about tagging, checking out and using Git in general.</p>
 				
 				<h3>Compiling the Java code</h3>
 				<p>The code is divided in two parts.
