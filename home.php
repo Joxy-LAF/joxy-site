@@ -8,6 +8,9 @@
 		<div class="span4">
 			<h3>What is Joxy?</h3>
 			<p>The KDE desktop environment uses the Oxygen theme by default. By default, Java applications don't follow this theme at all. The Joxy Look and Feel is a "skin" to let Java Swing applications look like the Oxygen theme. Joxy is not an application itself, but a skin for other programs.</p>
+			<div class="btn-center-container">
+				<a class="btn btn-primary btn-block" href="<?= APP_PREFIX ?>/screenshots/">View some screenshots</a>
+			</div>
 		</div>
 		<div class="span8">
 			<div id="newsCarousel" class="carousel slide">
@@ -43,11 +46,9 @@
 		<div class="span4">
 			<h3>How to get it?</h3>
 			<p>Use the following button to download Joxy, either the latest version, or older versions.</p>
-			<center>
-				<div style="width: 75%;">
-					<a class="btn btn-primary btn-block" href="<?= APP_PREFIX ?>/releases/joxy-0.1.0.zip">Download Joxy 0.1.0</a>
-					<a class="btn btn-block" href="<?= APP_PREFIX ?>/download">Download other versions</a>
-				</div>
-			</center>
+			<div class="btn-center-container">
+				<a class="btn btn-primary btn-block" href="<?= APP_PREFIX ?>/releases/joxy-0.1.0.zip">Download Joxy 0.1.0</a>
+				<a class="btn btn-block" href="<?= APP_PREFIX ?>/download">Download other versions</a>
+			</div>
 		</div>
 	</div>

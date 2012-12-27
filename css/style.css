@@ -25,6 +25,11 @@ p {
 	overflow: hidden;
 }
 
+.btn-center-container {
+	width: 75%;
+	margin: 0 auto;
+}
+
 .faq-answer {
 	margin-left: 10px;
 	padding-left: 10px;

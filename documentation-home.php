@@ -24,39 +24,31 @@
 	</div>
 	<div class="row">
 		<div class="span4">
-			<center>
-				<div style="width: 75%;">
-					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/download/">Downloading Joxy</a>
-					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/compile/">Compile Joxy yourself</a>
-				</div>
-			</center>
+			<div class="btn-center-container">
+				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/download/">Downloading Joxy</a>
+				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/compile/">Compile Joxy yourself</a>
+			</div>
 		</div>
 		<div class="span4">
-			<center>
-				<div style="width: 75%;">
-					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/install/">Installing Joxy</a>
-				</div>
-			</center>
+			<div class="btn-center-container">
+				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/install/">Installing Joxy</a>
+			</div>
 		</div>
 		<div class="span4">
-			<center>
-				<div style="width: 75%;">
-					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/usage/">Applying Joxy to a program</a>
-				</div>
-			</center>
+			<div class="btn-center-container">
+				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/usage/">Applying Joxy to a program</a>
+			</div>
 		</div>
 	</div>
 	<div class="row topspace">
-		<div class="span3">
+		<div class="span4">
 			&nbsp; <!--padding-->
 		</div>
-		<div class="span6">
+		<div class="span4">
 			<h3>Problems?</h3>
 			<p>If you encounter problems, the following page contains information about how to find a solution.</p>
-			<center>
-				<div style="width: 50%;">
-					<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/problems/">Solving problems</a>
-				</div>
-			</center>
+			<div class="btn-center-container">
+				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/problems/">Solving problems</a>
+			</div>
 		</div>
 	</div>
