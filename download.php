@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- libraries -->
-	<script src="jquery.js"></script>
-	<script src="Bootstrap/js/bootstrap.js"></script>
-	<link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
-	
-	<!-- CSS styling -->
-	<link type="text/css" href="style.css" rel="stylesheet" />
-	
-	<title>Joxy</title>
-</head>
-
-<body>
-
-<div class="container">
-	<div class="row" id="navrow">
-		<center>
-			<div class="btn-group upper-navbar">
-				<a class="btn btn-small" href="index.html">Home</a>
-				<a class="btn btn-small active" href="#">Download</a>
-				<a class="btn btn-small" href="screenshots.html">Screenshots</a>
-				<a class="btn btn-small" href="documentation.html">Documentation</a>
-				<a class="btn btn-small" href="faq.html">FAQ</a>
-				<a class="btn btn-small" href="about.html">About</a>
-			</div>
-		</center>
-	</div>
 	<div class="row">
 		<div class="span12" style="text-align: center;">
 			<h1>Download Joxy</h1>
@@ -55,7 +26,3 @@
 			</table>
 		</div>
 	</div>
-</div>
-
-</body>
-</html>

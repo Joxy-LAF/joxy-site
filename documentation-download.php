@@ -1,40 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- libraries -->
-	<script src="jquery.js"></script>
-	<script src="switchDistro.js"></script>
-	<script src="Bootstrap/js/bootstrap.js"></script>
-	<link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
-	
-	<!-- CSS styling -->
-	<link type="text/css" href="style.css" rel="stylesheet" />
-	
-	<title>Joxy</title>
-</head>
-
-<body>
-
-<div class="container">
-	<div class="row" id="navrow">
-		<center>
-			<div class="btn-group upper-navbar">
-				<a class="btn btn-small" href="index.html">Home</a>
-				<a class="btn btn-small" href="download.html">Download</a>
-				<a class="btn btn-small" href="screenshots.html">Screenshots</a>
-				<a class="btn btn-small active" href="documentation.html">Documentation</a>
-				<a class="btn btn-small" href="faq.html">FAQ</a>
-				<a class="btn btn-small" href="about.html">About</a>
-			</div>
-			<div class="btn-group upper-navbar lower-navbar">
-				<a class="btn btn-small active" href="#">Download</a>
-				<a class="btn btn-small" href="documentation-compile.html">Compilation</a>
-				<a class="btn btn-small" href="documentation-install.html">Installation</a>
-				<a class="btn btn-small" href="documentation-usage.html">Usage</a>
-				<a class="btn btn-small" href="documentation-problems.html">Problems</a>
-			</div>
-		</center>
-	</div>
 	<div class="row">
 		<div class="span12" style="text-align: center;">
 			<h1>Downloading Joxy</h1>
@@ -79,10 +42,6 @@
 			</span>
 			
 			<h3>Manually</h3>
-			<p>You can download precompiled versions of Joxy easily using the <a href="download.html">download page</a>. We recommend using the current stable version. We don't have nightly builds at the moment, so if you want to use the development version, you should compile Joxy yourself. See <a href="documentation-compile.html">this documentation page</a>.</p>
+			<p>You can download precompiled versions of Joxy easily using the <a href="<?= APP_PREFIX ?>/download/">download page</a>. We recommend using the current stable version. We don't have nightly builds at the moment, so if you want to use the development version, you should compile Joxy yourself. See <a href="<?= APP_PREFIX ?>/documentation/compile/">this documentation page</a>.</p>
 		</div>
 	</div>
-</div>
-
-</body>
-</html>

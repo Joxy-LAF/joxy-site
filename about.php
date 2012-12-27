@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- libraries -->
-	<script src="jquery.js"></script>
-	<script src="Bootstrap/js/bootstrap.js"></script>
-	<link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
-	
-	<!-- CSS styling -->
-	<link type="text/css" href="style.css" rel="stylesheet" />
-	
-	<title>Joxy</title>
-</head>
-
-<body>
-
-<div class="container">
-	<div class="row" id="navrow">
-		<center>
-			<div class="btn-group upper-navbar">
-				<a class="btn btn-small" href="index.html">Home</a>
-				<a class="btn btn-small" href="download.html">Download</a>
-				<a class="btn btn-small" href="screenshots.html">Screenshots</a>
-				<a class="btn btn-small" href="documentation.html">Documentation</a>
-				<a class="btn btn-small" href="faq.html">FAQ</a>
-				<a class="btn btn-small active" href="#">About</a>
-			</div>
-		</center>
-	</div>
 	<div class="row">
 		<div class="span12" style="text-align: center;">
 			<h1>About Joxy</h1>
@@ -45,11 +16,7 @@
 
 			<a id="logo"></a><h3>The logo</h3>
 			<p>KDE and Java both have their own mascots: KDE has Konqi, the friendly dragon, and Java has Duke. We thought it would be nice to combine those two. The result is the Joxy logo shown below.</p>
-			<center><img src="konqi-duke-original.png" alt="Joxy's logo"></center>
-			<p>For this logo we used the Konqi model by Basse and the Duke model by the <a href="http://duke.kenai.com/">Duke project</a>.</p>
+			<center><img src="<?= APP_PREFIX ?>/img/konqi-duke-original.png" alt="Joxy's logo"></center>
+			<p>For this logo we used the Konqi model by Basse and the Duke model by the <a target="_blank" href="http://duke.kenai.com/">Duke project</a>.</p>
 		</div>
 	</div>
-</div>
-
-</body>
-</html>

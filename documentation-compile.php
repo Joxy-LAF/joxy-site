@@ -1,40 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- libraries -->
-	<script src="jquery.js"></script>
-	<script src="switchDistro.js"></script>
-	<script src="Bootstrap/js/bootstrap.js"></script>
-	<link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
-	
-	<!-- CSS styling -->
-	<link type="text/css" href="style.css" rel="stylesheet" />
-	
-	<title>Joxy</title>
-</head>
-
-<body>
-
-<div class="container">
-	<div class="row" id="navrow">
-		<center>
-			<div class="btn-group upper-navbar">
-				<a class="btn btn-small" href="index.html">Home</a>
-				<a class="btn btn-small" href="download.html">Download</a>
-				<a class="btn btn-small" href="screenshots.html">Screenshots</a>
-				<a class="btn btn-small active" href="documentation.html">Documentation</a>
-				<a class="btn btn-small" href="faq.html">FAQ</a>
-				<a class="btn btn-small" href="about.html">About</a>
-			</div>
-			<div class="btn-group upper-navbar lower-navbar">
-				<a class="btn btn-small" href="documentation-download.html">Download</a>
-				<a class="btn btn-small active" href="#">Compilation</a>
-				<a class="btn btn-small" href="documentation-install.html">Installation</a>
-				<a class="btn btn-small" href="documentation-usage.html">Usage</a>
-				<a class="btn btn-small" href="documentation-problems.html">Problems</a>
-			</div>
-		</center>
-	</div>
 	<div class="row">
 		<div class="span12" style="text-align: center;">
 			<h1>Compiling Joxy</h1>
@@ -60,7 +23,7 @@
 			
 			<span class="distro linux debian arch chakra">
 				<h3>Getting the source</h3>
-				<p>If you want to compile Joxy yourself, you have to obtain the source from our Git repository. You can access this repository at SourceForge by clicking <a href="http://sourceforge.net/p/joxy/code/">here</a>.
+				<p>If you want to compile Joxy yourself, you have to obtain the source from our Git repository. You can access this repository at SourceForge <a target="_blank" href="http://sourceforge.net/p/joxy/code/">here</a>.
 				
 				<p>To use Git, you will need to have it installed on your computer. This can be done with the package manager of your distribution. <span class="distro debian">For Debian and Ubuntu, the package name is simply <code>git</code>, so use <code>apt-get install git</code> to install it.</span> <span class="distro arch">For Arch Linux, the package name is simply <code>git</code>, so use <code>pacman -S git</code> to install it. <b>To do: test this.</b></span> <span class="distro chakra">For Chakra Linux, the package name is simply <code>git</code>, so use <code>pacman -S git</code> to install it. <b>To do: test this.</b></span></p>
 				
@@ -91,7 +54,7 @@
 				<p>To test your compiled code, you can start <code>test.TestGUI</code>. That will launch some GUI that will load Joxy and display some of the many Java Swing components. (This only works if you have compiled the <code>test</code> folder.)</p>
 				
 				<h3>Compiling the native text rendering</h3>
-				<p>To use native text rendering, you will also have to compile the C++ code in the src folder to a shared library (a *.so file). This can be done using <code>gcc</code>. To this end, we have created a little script, <code>compile.sh</code>, in the <code>src</code> folder. The aim of this script is to assist you and make it as easy as possible to enable native text rendering. We are still working on this, so please, if you have suggestions or noted a bug, report this via the forum on SourceForge.</p>
+				<p>To use native text rendering, you will also have to compile the C++ code in the src folder to a shared library (a *.so file). This can be done using <code>gcc</code>. To this end, we have created a little script, <code>compile.sh</code>, in the <code>src</code> folder. The aim of this script is to assist you and make it as easy as possible to enable native text rendering. We are still working on this, so please, if you have suggestions or noted a bug, report this via the <a target="_blank" href="http://sourceforge.net/p/joxy/discussion/">forum</a> on SourceForge.</p>
 				
 				<span class="distro arch chakra"><p>Note: we have received reports that on Arch and Chakra the detection of your <code>JAVA_HOME</code> folder doesn't work. Please adjust the script if it doesn't work for you.</p></span>
 				
@@ -114,11 +77,7 @@ Currently, the following directories are present in your Java library path:
 - /lib
 - /usr/lib
 You should pick one of these folders to move the shared library to.</pre>
-				Note that the script presents a list of directories you can put the compiled library in. Further information about this will be given at the page about installing Joxy.</p>
+				Note that the script presents a list of directories you can put the compiled library in. Further information about this will be given at the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>.</p>
 			</span>
 		</div>
 	</div>
-</div>
-
-</body>
-</html>

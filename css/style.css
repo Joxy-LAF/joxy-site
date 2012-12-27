@@ -1,0 +1,62 @@
+p {
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+#konqi-duke-image {
+	background-image: url("../img/konqi-duke.png");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	position: fixed;
+	left: -100px;
+	bottom: 0;
+	width: 650px;
+	height: 323px;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+	opacity: 0.25;
+	overflow: hidden;
+}
+
+.faq-answer {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #D3D7CF;
+	font-style: italic;
+}
+
+.faq-version {
+	color: #204A87;
+}
+
+.footer {
+	margin-top: 1em;
+}
+
+.lower-navbar {
+	position: relative;
+	top: -5px;
+}
+
+.muted {
+	color: #ADB0AA;
+}
+
+.muted a {
+	color: #82C4FF;
+}
+
+.upper-navbar > .btn {
+	border-top: 0;
+}
+
+.upper-navbar > .btn:first-child {
+	border-top-left-radius: 0;
+}
+
+.upper-navbar > .btn:last-child {
+	border-top-right-radius: 0;
+}

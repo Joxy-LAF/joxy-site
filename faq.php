@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- libraries -->
-	<script src="jquery.js"></script>
-	<script src="Bootstrap/js/bootstrap.js"></script>
-	<link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
-	
-	<!-- CSS styling -->
-	<link type="text/css" href="style.css" rel="stylesheet" />
-	
-	<title>Joxy</title>
-</head>
-
-<body>
-
-<div class="container">
-	<div class="row" id="navrow">
-		<center>
-			<div class="btn-group upper-navbar">
-				<a class="btn btn-small" href="index.html">Home</a>
-				<a class="btn btn-small" href="download.html">Download</a>
-				<a class="btn btn-small" href="screenshots.html">Screenshots</a>
-				<a class="btn btn-small" href="documentation.html">Documentation</a>
-				<a class="btn btn-small active" href="#">FAQ</a>
-				<a class="btn btn-small" href="about.html">About</a>
-			</div>
-		</center>
-	</div>
 	<div class="row">
 		<div class="span12" style="text-align: center;">
 			<h1>Frequently asked questions</h1>
@@ -43,7 +14,7 @@ Joxy is a so-called <em>look-and-feel</em> for Java Swing applications. This loo
 <p><strong>Why is it called Joxy?</strong><br />
 The <em>J</em> is for Java, and <em>oxy</em> is for Oxygen.</p>
 <p><strong>What is that icon for Joxy?</strong><br />
-It is Duke, Java's mascot, sitting on Konqi, KDE's mascot. We made the image by combining 3D models of Duke and Konqi. See the <a href="about.html#logo">about page</a>.</p>
+It is Duke, Java's mascot, sitting on Konqi, KDE's mascot. We made the image by combining 3D models of Duke and Konqi. See the <a href="<?= APP_PREFIX ?>/about/#logo">about page</a>.</p>
 <p><strong>How do I get Joxy?</strong><br />
 You can either download it, or compile it yourself. You can download Joxy with the <em>Downloads</em> button above. If you want to compile Joxy yourself, please see <a class="alink" href="/p/joxy/wiki/Downloading%20the%20source/">[Downloading the source]</a> and <a class="alink" href="/p/joxy/wiki/Compiling%20the%20source/">[Compiling the source]</a>.</p>
 <p><strong>How do I put Joxy on a program?</strong><br />
@@ -68,13 +39,9 @@ The GUI components are painted by pure Java code, it is not delegated to the act
 			<p>The following questions do not apply anymore to the current Joxy version.</p>
 
 <p><strong><span class="faq-version">Joxy 0.0.3</span> &ndash; I'm compiling Joxy, but I don't want/manage to compile in the native text rendering. Now Joxy won't work. What should I do?</strong><br />
-The native text rendering is purely optional. If you don't want to use it, or if you are not able to compile it (please post on our forum then!), you can set in the source code of <code>joxy.utils.JoxyGraphics</code> the variable <code>NATIVE_TEXT_RENDERING</code> to <code>false</code> instead of <code>true</code>. Then Joxy will just use the default Java text rendering. In the future, we want to implement that Joxy switches to Java text rendering automatically if the shared library for the native rendering cannot be found. <i>This is implemented in Joxy 0.1.0.</i></p>
+The native text rendering is purely optional. If you don't want to use it, or if you are not able to compile it (please post on our forum then!), you can set in the source code of <code>joxy.utils.JoxyGraphics</code> the variable <code>NATIVE_TEXT_RENDERING</code> to <code>false</code> instead of <code>true</code>. Then Joxy will just use the default Java text rendering. In the future, we want to implement that Joxy switches to Java text rendering automatically if the shared library for the native rendering cannot be found. <div class="faq-answer">This is implemented in Joxy 0.1.0.</div></p>
 <p><strong><span class="faq-version">Joxy 0.0.2</span> &ndash; Why does an application crash when it tries to bring up a JFileChooser?</strong><br />
-JFileChoosers are not implemented yet. <i>A JFileChooser delegate was implemented in 0.0.3, now applications don't crash anymore.</i></p>
+JFileChoosers are not implemented yet. <div class="faq-answer">A JFileChooser delegate was implemented in 0.0.3, now applications don't crash anymore.</div></p>
 
 		</div>
 	</div>
-</div>
-
-</body>
-</html>
