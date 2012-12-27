@@ -16,7 +16,7 @@
 <head>
 	<!-- libraries -->
 	<script src="<?= APP_PREFIX ?>/js/jquery.js"></script>
-<?php if ($aPage === 'download') : ?>
+<?php if ($aPage === 'documentation') : ?>
 	<script src="<?= APP_PREFIX ?>/js/switchDistro.js"></script>
 <?php endif; ?>
 	<script src="<?= APP_PREFIX ?>/Bootstrap/js/bootstrap.js"></script>

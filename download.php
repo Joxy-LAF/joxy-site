@@ -15,7 +15,7 @@
 			</table>
 			
 			<h3>Development version (unstable)</h3>
-			<p>If you want to track the development closely, you can get the source code from our Git repository. See <a href="documentation-source.html">the documentation</a>. Note that the development version may compile sometimes, and it might even work correctly :-) Seriously, this version is not recommended for normal use.</p>
+			<p>If you want to track the development closely, you can get the source code from our Git repository. See <a href="<?= APP_PREFIX ?>/documentation/compile/">the documentation</a>. Note that the development version may compile sometimes, and it might even work correctly :-) Seriously, this version is not recommended for normal use.</p>
 			
 			<h3>Old versions</h3>
 			<p>These are older versions of Joxy. We do not recommend them because they contain less styled components, and probably more bugs.</p>
