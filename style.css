@@ -1,0 +1,42 @@
+#konqi-duke-image {
+	background-image: url("konqi-duke.png");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	position: absolute;
+	margin-left: -600px;
+	left: 30%;
+	top: 0%;
+	width: 200%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.25;
+	overflow: hidden;
+}
+
+p {
+    -moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+}
+
+.upper-navbar > .btn {
+	border-top: 0;
+}
+
+.upper-navbar > .btn:first-child {
+	border-top-left-radius: 0;
+}
+
+.upper-navbar > .btn:last-child {
+	border-top-right-radius: 0;
+}
+
+.lower-navbar {
+	position: relative;
+	top: -5px;
+}
+
+.faq-version {
+	color: #204A87;
+}
