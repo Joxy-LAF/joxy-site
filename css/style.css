@@ -30,6 +30,18 @@ p {
 	margin: 0 auto;
 }
 
+.carousel {
+	border: 1px solid #D3D7CF;
+}
+
+.carousel .item {
+	border: 1px solid #D3D7CF;
+}
+
+.carousel-fixed-height {
+	height: 600px;
+}
+
 .faq-answer {
 	margin-left: 10px;
 	padding-left: 10px;
@@ -60,7 +72,7 @@ p {
 
 .screenshot {
 	margin: 0 auto;
-	padding: 100px 0 100px 0;
+	padding: 0 0 100px 0;
 }
 
 .topspace {

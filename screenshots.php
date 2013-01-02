@@ -83,7 +83,7 @@ define('DESCRIPTION_FILE', $aScreenDir . 'ImageDescriptions.txt');
 ?>
 	<div class="row">
 		<div class="span12">
-			<div id="newsCarousel" class="carousel slide">
+			<div id="newsCarousel" class="carousel carousel-fixed-height slide topspace">
 				<!-- Carousel items -->
 				<div class="carousel-inner">
 <?php
@@ -100,7 +100,7 @@ if (is_dir($aScreenDir)) {
 			if (is_null($aImgDesc))  continue;
 			$aFirstScreenshot = false;
 			echo(
-					'					<div class="' . $aScreenshotClass . '">' . "\n" .
+					'					<div class="' . $aScreenshotClass . ' carousel-fixed-height">' . "\n" .
 					'						<img class="screenshot" src="' . base64_encode_image($aScreenshots[$i], 'png') . '" alt="' . basename($aScreenshots[$i]) . '" />' . "\n" .
 					'						<div class="carousel-caption">' . "\n" .
 					'							<h4>' . basename($aScreenshots[$i]) . '</h4>' . "\n" .

@@ -24,6 +24,8 @@
 	
 	<!-- CSS styling -->
 	<link type="text/css" href="<?= APP_PREFIX ?>/css/style.css" rel="stylesheet" />
+	<!-- Icon -->
+	<link rel="shortcut icon" href="<?= APP_PREFIX ?>/img/konqi-duke-tiny.ico" type="image/x-icon" />
 	
 	<title>Joxy</title>
 </head>
