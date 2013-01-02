@@ -27,7 +27,7 @@ function base64_encode_image($pFileName, $pFileType) {
  */
 function getImageDescription($pFileName) {
 	global $aLang;
-	if (!file_exists(DESCRIPTION_FILE))  return "";
+	if (!file_exists(DESCRIPTION_FILE))  return null;
 	$pFileName = array_pop(explode('/', $pFileName));
 	$aLines = file(DESCRIPTION_FILE);
 	$aDescr = null;
@@ -38,7 +38,8 @@ function getImageDescription($pFileName) {
 		$aFileDescr = explode('_', $aLineSplit[0]);
 		$aLangDescr = trim(array_pop($aFileDescr));
 		$aFileDescr = trim(implode('_', $aFileDescr));
-		if ($aFileDescr === $pFileName && ($aLangDescr === strtoupper($aLang) || (!isset($aLang) && strtoupper($aLangDescr) === 'EN'))) {
+		// The '_EN' can be left out, in that case, that is used.
+		if (trim($aLineSplit[0]) === $pFileName || ($aFileDescr === $pFileName && ($aLangDescr === strtoupper($aLang) || (!isset($aLang) && strtoupper($aLangDescr) === 'EN')))) {
 				array_shift($aLineSplit);
 			$aDescr = trim(implode('===', $aLineSplit));
 			break;

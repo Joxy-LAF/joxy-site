@@ -1,7 +1,7 @@
 # English (default) descriptions
-2011-12-21-HighContrastTestGui1.png_EN === A screenshot of our first test GUI with contrast set to high.
-2011-12-21-LowContrastTestGui1.png_EN  === A screenshot of our first test GUI with contrast set to low.
-2011-12-21-Netbeans.png_EN             === A screenshot of Netbeans with our Joxy LAF applied to it.
-2012-01-29-JoxyKDEAbout.png_EN         === A preview of the 0.0.2 release.
-2012-01-29-JOSM.png_EN                 === The JOSM program with the Joxy LAF.
-2013-01-02-JoxyNetbeansGui.png_EN      === The Netbeans GUI builder with the current Git version of Joxy.
+2011-12-21-HighContrastTestGui1.png === A screenshot of our first test GUI with contrast set to high.
+2011-12-21-LowContrastTestGui1.png  === A screenshot of our first test GUI with contrast set to low.
+2011-12-21-Netbeans.png             === A screenshot of Netbeans with our Joxy LAF applied to it.
+2012-01-29-JoxyKDEAbout.png         === A preview of the 0.0.2 release.
+2012-01-29-JOSM.png                 === The JOSM program with the Joxy LAF.
+2013-01-02-JoxyNetbeansGui.png      === The Netbeans GUI builder with the current Git version of Joxy.
