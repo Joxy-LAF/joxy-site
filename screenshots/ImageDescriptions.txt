@@ -1,3 +1,12 @@
+# Captions for images in the format FILENAME[_LANG] === CAPTION.
+#
+# This file is searched for a caption top-to-bottom, where just a filename without language tag is
+# always used if the filename matches. Therefore, captions with language tag should be added
+# above the defaults.
+#
+# The '===' can be used in a caption, but not in a filename. Captions and filenames are trimmed.
+# Newlines in captions are ignored, or actually, all text following the newline is ignored.
+
 # English (default) descriptions
 2011-12-21-HighContrastTestGui1.png === A screenshot of our first test GUI with contrast set to high.
 2011-12-21-LowContrastTestGui1.png  === A screenshot of our first test GUI with contrast set to low.
