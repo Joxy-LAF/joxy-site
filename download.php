@@ -5,7 +5,7 @@
 	</div>
 	<div class="row">
 		<div class="span12">
-			<p>On this page, you can download all versions of Joxy. The downloads are hosted by <a href="http://www.sourceforge.net/p/joxy">SourceForge</a>.</p>
+			<p>On this page, you can download all versions of Joxy. The downloads are hosted by <a target="_blank" href="http://www.sourceforge.net/p/joxy">SourceForge</a>.</p>
 			
 			<h3>Current version</h3>
 			<p>This is the latest released version of Joxy. It is (reasonably) stable. We recommend this version for normal use.</p>
