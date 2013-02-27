@@ -84,6 +84,8 @@ Switched to branch 'master'</pre>
 				<h3>Compiling the native text rendering</h3>
 				<p>To use native text rendering, you will also have to compile the C++ code in the src folder to a shared library (a *.so file). This can be done using <code>gcc</code>. To this end, we have created a little script, <code>compile.sh</code>, in the <code>src</code> folder. The aim of this script is to assist you and make it as easy as possible to enable native text rendering. We are still working on this, so please, if you have suggestions or noted a bug, report this via the <a target="_blank" href="http://sourceforge.net/p/joxy/discussion/">forum</a> on SourceForge.</p>
 				
+				<p>You will need the Qt 4 development packages before compiling.<span class="distro debian"> For Debian and Ubuntu, this package is called <code>libqt4-dev</code>. Install it using <code>apt-get install libqt4-dev</code> if you don't have it already.</span></p>
+				
 				<span class="distro arch chakra"><p>Note: we have received reports that on Arch and Chakra the detection of your <code>JAVA_HOME</code> folder doesn't work. Please adjust the script if it doesn't work for you.</p></span>
 				
 				<p>An example of how to compile the shared library (we suppose the current working directory is the root of the Git repository):
