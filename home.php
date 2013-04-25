@@ -47,7 +47,7 @@
 			<h3>How to get it?</h3>
 			<p>Use the following button to download Joxy, either the latest version, or older versions.</p>
 			<div class="btn-center-container">
-				<a class="btn btn-primary btn-block" target="_blank" href="http://sourceforge.net/projects/joxy/files/latest/download">Download Joxy 0.1.0</a>
+				<a class="btn btn-primary btn-block" target="_blank" href="http://sourceforge.net/projects/joxy/files/latest/download">Download Joxy 0.2.0</a>
 				<a class="btn btn-block" href="<?= APP_PREFIX ?>/download">Download other versions</a>
 			</div>
 		</div>
