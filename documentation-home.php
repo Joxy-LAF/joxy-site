@@ -26,7 +26,7 @@
 		<div class="span4">
 			<div class="btn-center-container">
 				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/download/">Downloading Joxy</a>
-				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/compile/">Compile Joxy yourself</a>
+				<a class="btn btn-block" href="<?= APP_PREFIX ?>/documentation/compile/">Compile Joxy yourself</a>
 			</div>
 		</div>
 		<div class="span4">
@@ -41,7 +41,7 @@
 		</div>
 	</div>
 	<div class="row topspace">
-		<div class="span4">
+		<div class="span2">
 			&nbsp; <!--padding-->
 		</div>
 		<div class="span4">
@@ -49,6 +49,13 @@
 			<p>If you encounter problems, the following page contains information about how to find a solution.</p>
 			<div class="btn-center-container">
 				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/documentation/problems/">Solving problems</a>
+			</div>
+		</div>
+		<div class="span4">
+			<h3>Developer documentation</h3>
+			<p>For if you would like to understand Joxy's code, more developer-oriented documentation is available in the Wiki on SourceForge.</p>
+			<div class="btn-center-container">
+				<a class="btn btn-block btn-primary" href="http://sourceforge.net/p/joxy/wiki/Home/">Wiki at SourceForge</a>
 			</div>
 		</div>
 	</div>
