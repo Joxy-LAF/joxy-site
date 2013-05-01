@@ -17,7 +17,7 @@
 			</center>
 			
 			<h3>Applying to a single application</h3>
-			<p>You can use the general ways  that are available in Swing to switch look-and-feels, to apply Joxy to a certain application.
+			<p>To apply Joxy to an application, you can use the general ways that are available in Swing to switch look-and-feels.
 				<ul>
 					<li><b>Using a command line switch.</b> You can use the command line option <code>-Dswing.defaultlaf=joxy.JoxyLookAndFeel</code> when starting the application to switch the look and feel to Joxy. For example: <pre>java -Dswing.defaultlaf=joxy.JoxyLookAndFeel -jar someprogram.jar</pre></li>
 					<li><p><b>Programming it in your application.</b> If you want, you can provide your own applications with the Joxy Look and Feel. This can be done with the following statement: <pre>UIManager.setLookAndFeel("joxy.JoxyLookAndFeel");</pre> Make sure this statement is issued before any GUI component is loaded (even a <code>JFrame</code>), else strange things may happen! You may want to distribute the Joxy JAR file with your program.</p>
