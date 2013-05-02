@@ -53,9 +53,10 @@
 		</div>
 		<div class="span4">
 			<h3>Developer documentation</h3>
-			<p>For if you would like to understand Joxy's code, more developer-oriented documentation is available in the Wiki on SourceForge.</p>
+			<p>For if you would like to understand Joxy's code, Javadoc-generated documentation is available. Further developer-oriented documentation is available in the Wiki on SourceForge.</p>
 			<div class="btn-center-container">
-				<a class="btn btn-block btn-primary" href="http://sourceforge.net/p/joxy/wiki/Home/">Wiki at SourceForge</a>
+				<a class="btn btn-block btn-primary" href="<?= APP_PREFIX ?>/javadoc/index.html">Javadoc</a>
+				<a class="btn btn-block" href="http://sourceforge.net/p/joxy/wiki/Home/">Wiki at SourceForge</a>
 			</div>
 		</div>
 	</div>
