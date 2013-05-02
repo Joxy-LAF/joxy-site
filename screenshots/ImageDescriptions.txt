@@ -8,9 +8,8 @@
 # Newlines in captions are ignored, or actually, all text following the newline is ignored.
 
 # English (default) descriptions
-2011-12-21-HighContrastTestGui1.png === A screenshot of our first test GUI with contrast set to high.
-2011-12-21-LowContrastTestGui1.png  === A screenshot of our first test GUI with contrast set to low.
-2011-12-21-Netbeans.png             === A screenshot of Netbeans with our Joxy LAF applied to it.
-2012-01-29-JoxyKDEAbout.png         === A preview of the 0.0.2 release.
-2012-01-29-JOSM.png                 === The JOSM program with the Joxy LAF.
-2013-01-02-JoxyNetbeansGui.png      === The Netbeans GUI builder with the current Git version of Joxy.
+2013-05-02-joxy-0.2.0-netbeans-gui.png    === The Netbeans GUI builder with Joxy 0.2.0
+2013-05-02-joxy-0.2.0-josm.png            === The Java OpenStreetMap Editor using Joxy 0.2.0
+2013-05-02-joxy-0.2.0-hodoku.png          === HoDoKu, a Sudoku solver application, works well with Joxy 0.2.0
+2013-05-02-joxy-0.2.0-about-kde.png       === The real About KDE dialog (left) compared to a copy made with Java Swing (right) using Joxy 0.2.0
+2013-05-02-joxy-0.2.0-antlrworks.png      === ANTLRWorks works well with Joxy 0.2.0, when not using the (in Joxy unsupported) "Desktop Mode"
