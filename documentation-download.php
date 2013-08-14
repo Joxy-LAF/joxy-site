@@ -22,12 +22,27 @@
 				
 				<p>The package name is <code>java-swing-joxy-git</code>. See <a href="https://aur.archlinux.org/packages/java-swing-joxy-git/">this page</a>. With the package, you will automatically get the latest Git version, which may not be stable.</p>
 				
+				<p><b>To do: add specific instructions to install this package. (If you are an Arch user, please contribute them!)</b></p>
+				
 				<p>If you don't want to use this package, for example because you rather want to use a stable version of Joxy, it is of course also possible to get Joxy manually. You can follow the following instructions for that.</p>
 			</span>
 			<span class="distro chakra">
 				<p>For Chakra Linux, Joxy is available as a package in the Chakra Community Repository (CCR).</p>
 				
 				<p>The package name is <code>joxy-git</code>. See <a href="http://www.chakra-linux.org/ccr/packages.php?ID=3874">this page</a>. With the package, you will automatically get the latest Git version, which may not be stable.</p>
+				
+				<p>To install this package, you can use the <code>ccr</code> command:
+<pre>ccr -S joxy-git</pre>
+				The source code will be automatically compiled, packaged and installed.</p>
+				
+				<p><b>Note:</b> You might get the following error:
+<pre>compile.sh: [EE] Could not find Java home. Looked at:
+  [...]
+compile.sh: [EE] Please edit ./compile.sh if your Java installation is located somewhere else.
+==> ERROR: A failure occurred in build().</pre>
+				You can solve this by manually setting the <code>$JAVA_HOME</code> environment variable using <code>export JAVA_HOME=/path/to/jdk</code>, for example:
+<pre>export JAVA_HOME='/usr/lib/jvm/java-7-openjdk'</pre>
+				and trying again.</p>
 				
 				<p>If you don't want to use this package, for example because you rather want to use a stable version of Joxy, it is of course also possible to get Joxy manually. You can follow the following instructions for that.</p>
 			</span>
