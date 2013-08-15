@@ -41,7 +41,7 @@
 			We only test Joxy on two systems (Debian Testing and Ubuntu 12.04), but it should work with other distributions too. If you find problems please report them. Also, if you use another distribution and the installation/compilation instructions are incorrect for this distribution, please report that too, so we can change them.</p>
 
 			<p><strong>Will other operating systems be supported in the future?</strong><br />
-			The current Git version should run on other platforms (Windows/Mac/Linux without KDE) too, but we have not tested that very thoroughly. The most important problem is the absence of the Oxygen icons.</p>
+			Version 0.2.0 should run on other platforms (Windows/Mac/Linux without KDE) too, but we have not tested that very thoroughly. The most important problem is the absence of the Oxygen icons.</p>
 
 			<p><strong>How are widgets rendered?</strong><br />
 			The GUI components are painted by pure Java code, it is not delegated to the actual Oxygen C++ code. Joxy is however able to delegate the text rendering to Qt in order to replace the ugly Java font rendering. We took the painting-by-Java approach for several reasons. Firstly we are not very proficient in C++, so it would take us a long time to get it working. Secondly, Qt styles are really different from Java look-and-feels. It would be difficult to match these two. A disadvantage of this approach is obviously that it is very difficult to get the rendering pixel-perfect, and that also isn't quite the case at the moment.</p>
