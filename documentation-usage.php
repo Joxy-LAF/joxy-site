@@ -47,8 +47,9 @@
 			<p>
 				If you want this, locate this file.
 				<span class="distro debian">On Debian and Ubuntu you can find it in <code>/etc/java-7-openjdk/swing.properties</code> or something like that.</span>
-				<span class="distro arch chakra"><b>To do: specific information for Arch and Chakra.</b></span>
-				<span class="distro windows">On Windows, you can find it in <code>C:\Program Files\Java\jre1.6.0_22\lib\swing.properties</code> or something like that.</span>
+				<span class="distro arch"><b>To do: specific information for Arch.</b></span>
+				<span class="distro chakra">On Chakra you can find it in <code>/usr/lib/jvm/java-7-openjdk/jre/lib/swing.properties</code> or something like that.</span>
+				<span class="distro windows">On Windows, you can find it in <code>C:\Program Files\Java\jre1.7.0_21\lib\swing.properties</code> or something like that.</span>
 				If the file doesn't exist yet, you can create it.
 			</p>
 			<p>Now you can add lines in this file of the format <pre>setting=value</pre> where <code>setting</code> is one of the following.
