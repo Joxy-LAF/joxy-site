@@ -25,7 +25,7 @@
 			We composed a page with instructions about that here: <a href="<?= APP_PREFIX ?>/documentation/usage">Applying Joxy to an application</a>.</p>
 
 			<p><strong>Is Joxy finished yet?</strong><br />
-			No, surely not! The current version is far from being complete and contains bugs. Hence the version number 0.1.0.</p>
+			No, surely not! The current version is far from being complete and contains bugs. Hence the version number 0.2.0.</p>
 
 			<p><strong>How does the version numbering scheme work?</strong><br />
 			The current version is 0.2.0. The first digit is a 0, because Joxy is not stable yet. We just increment the last digit for every new version and if there is a large bugfix release, we increment the middle digit. So the versions with a 0 in the end are meant to be more stable, but in this early development phase we still recommend using the latest version.</p>
@@ -38,7 +38,7 @@
 
 			<p><strong>What systems are supported?</strong><br />
 			Officially, only KDE systems on Linux are supported at the moment.<br />
-			We only test Joxy on two systems (Debian Testing and Ubuntu 12.04), but it should work with other distributions too. If you find problems please report them. Also, if you use another distribution and the installation/compilation instructions are incorrect for this distribution, please report that too, so we can change them.</p>
+			We only test Joxy on two systems (Debian Testing and Ubuntu 12.04), but it should work with other distributions too. If you find problems please report them. Also, if you use another distribution and the installation/compilation instructions are incorrect for this distribution, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">report</a> that too, so we can change them.</p>
 
 			<p><strong>Will other operating systems be supported in the future?</strong><br />
 			Version 0.2.0 should run on other platforms (Windows/Mac/Linux without KDE) too, but we have not tested that very thoroughly. The most important problem is the absence of the Oxygen icons.</p>
