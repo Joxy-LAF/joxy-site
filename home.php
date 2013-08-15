@@ -12,33 +12,6 @@
 				<a class="btn btn-primary btn-block" href="<?= APP_PREFIX ?>/screenshots/">View some screenshots</a>
 			</div>
 		</div>
-		<div class="span8">
-			<div id="newsCarousel" class="carousel slide">
-				<!-- Carousel items -->
-				<div class="carousel-inner">
-					<div class="active item">
-						<img alt="Theming in Joxy" src="<?= APP_PREFIX ?>/screenshots/theming.png">
-						<div class="carousel-caption">
-							<h4>Theming</h4>
-							<p>Joxy detects which KDE theme you use, and uses that to style Java programs accordingly.</p>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="Netbeans with Joxy" src="<?= APP_PREFIX ?>/screenshots/netbeans.png">
-						<div class="carousel-caption">
-							<h4>Netbeans</h4>
-							<p>Netbeans in Oxygen style, using Joxy 0.1.0.</p>
-						</div>
-					</div>
-				</div>
-				<!-- Carousel nav -->
-				<a class="carousel-control left" href="#newsCarousel" data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#newsCarousel" data-slide="next">&rsaquo;</a>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="span4">&nbsp;<!-- padding for the image --></div>
 		<div class="span4">
 			<h3>Is it stable?</h3>
 			<p>Joxy is still in alpha status, so bugs are to be expected. However, many programs should work without problems.</p>
