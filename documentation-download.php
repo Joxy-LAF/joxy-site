@@ -22,7 +22,7 @@
 				
 				<p>The package name is <code>java-swing-joxy-git</code>. See <a href="https://aur.archlinux.org/packages/java-swing-joxy-git/">this page</a>. With the package, you will automatically get the latest Git version, which may not be stable.</p>
 				
-				<p><b>To do: add specific instructions to install this package. (If you are an Arch user, please contribute them!)</b></p>
+				<p><b>To do: add specific instructions to install this package. (If you are an Arch user, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">contribute</a> them!)</b></p>
 				
 				<p>If you don't want to use this package, for example because you rather want to use a stable version of Joxy, it is of course also possible to get Joxy manually. You can follow the following instructions for that.</p>
 			</span>
