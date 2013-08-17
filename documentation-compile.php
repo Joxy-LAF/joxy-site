@@ -76,7 +76,7 @@ Switched to branch 'master'</pre>
 				</p>
 				
 				<h3 id="using-maven">Using Maven</h3>
-				<p>Maven is a build automation tool, that takes care of the entire compilation and packaging process. Joxy will, since version 0.3.0, be distributed as a Maven project, so you can use Maven to build it. <b>Temporary note: at this moment we are still preparing the switch to a Maven project structure in Git. You need to switch to the <code>maven-conversion</code> branch. For example, use <code>git checkout maven-conversion</code>. This branch will be merged into <code>master</code> soon.</p>
+				<p>Maven is a build automation tool, that takes care of the entire compilation and packaging process. Joxy will, since version 0.3.0, be distributed as a Maven project, so you can use Maven to build it. <b>Temporary note: at this moment we are still preparing the switch to a Maven project structure in Git. You need to switch to the <code>maven-conversion</code> branch. For example, use <code>git checkout maven-conversion</code>. This branch will be merged into <code>master</code> soon.</b></p>
 				
 				<p>You will first need to install Maven. Visit <a href="http://maven.apache.org/">the Maven website</a> for more information. <span class="distro debian">(For Debian and Ubuntu, you can also just install the <code>maven</code> package.)</span></p>
 				
@@ -101,24 +101,21 @@ Switched to branch 'master'</pre>
 				</p></span>
 				
 				<p>An example of how to compile the shared library (we suppose the current working directory is the root of the Git repository):
-<pre>$ cd src/
+<pre>$ cd joxy/src/main/scripts/
 $ ./compile.sh
-compile.sh: [II] JAVA_HOME='/usr/lib/jvm/java-7-openjdk-amd64'
-compile.sh: [II] Now compiling...
-compile.sh: [II] Done. File 'libnativeTextRenderer.so' created.
-compile.sh: [II] You should move this file to the Java library path.
-Currently, the following directories are present in your Java library path:
-- /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server
-- /usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64
-- /usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64
-- /usr/java/packages/lib/amd64
-- /usr/lib/x86_64-linux-gnu/jni
-- /lib/x86_64-linux-gnu
-- /usr/lib/x86_64-linux-gnu
-- /usr/lib/jni
-- /lib
-- /usr/lib
-You should pick one of these folders to move the shared library to.</pre>
+compile.sh: [I] Multiple Java installations were found:
+compile.sh: [I]   [0]: /usr/lib/jvm/java-7-openjdk-amd64
+compile.sh: [I]   [1]: /usr/lib/jvm/java-6-openjdk-amd64
+compile.sh: [I] Please pick one of these (default is [0]): 
+compile.sh: [I] Now compiling...
+compile.sh: [I] Done. File '/home/thom/Joxy/joxy-code/joxy/install/libjoxy.so' created.
+compile.sh: [I] You should move this file to the Java library path.
+compile.sh: [I] Currently, the following directories are present in your Java library path:
+compile.sh: [I]   /usr/java/packages/lib/amd64
+compile.sh: [I]   /usr/lib/jni
+compile.sh: [I]   /lib
+compile.sh: [I]   /usr/lib
+compile.sh: [I] You should pick one of these folders to move the shared library to.</pre>
 				Note that the script presents a list of directories you can put the compiled library in. Further information about this will be given at the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>.</p>
 			</span>
 		</div>
