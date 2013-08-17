@@ -65,28 +65,40 @@ Previous HEAD position was b7cb104... Merge branch 'master' of ssh://git.code.sf
 Switched to branch 'master'</pre>
 				After executing this, you are up-to-date again. Please refer to the excellent <a target="_blank" href="http://git-scm.com/docs">Git documentation</a> for more details about tagging, checking out and using Git in general.</p>
 				
-				<h3>Compiling the Java code</h3>
-				<p>The code is divided in two parts.
+				<h3>Compiling the source code</h3>
+				<p>To compile, you will of course need the Java Development Kit. We test Joxy with OpenJDK 7. (OpenJDK 6 will probably work as well, but since Joxy 0.2.0 we do not test on that platform anymore.)</p>
+				
+				<p>You can compile the source code in two ways.
 					<ul>
-						<li><code>src</code> contains the actual source code of the look and feel.</li>
-						<li><code>test</code> contains some utilities for testing. For example the test GUI resides in this folder. If you are compiling Joxy, you can drop this folder if you don't need these utilities.</li>
+						<li>Building the project <a href="#using-maven">using Maven</a>. If you have Maven installed, we recommend this way, since it is easier.</li>
+						<li>If you do not have Maven, you can also compile the source code <a href="#manually-java">manually</a>.</li>
 					</ul>
 				</p>
 				
-				<p>To compile, you will of course need the Java Development Kit. We test Joxy with the OpenJDK version 6 and 7.</p>
+				<h3 id="using-maven">Using Maven</h3>
+				<p>Maven is a build automation tool, that takes care of the entire compilation and packaging process. Joxy will, since version 0.3.0, be distributed as a Maven project, so you can use Maven to build it. <b>Temporary note: at this moment we are still preparing the switch to a Maven project structure in Git. You need to switch to the <code>maven-conversion</code> branch. For example, use <code>git checkout maven-conversion</code>. This branch will be merged into <code>master</code> soon.</p>
+				
+				<p>You will first need to install Maven. Visit <a href="http://maven.apache.org/">the Maven website</a> for more information. <span class="distro debian">(For Debian and Ubuntu, you can also just install the <code>maven</code> package.)</span></p>
+				
+				<p>Now open a terminal, and go to the <code>joxy</code> folder in the Joxy source tree. Enter the following command:
+<pre>mvn package</pre>
+				If all goes well, the Joxy JAR file and the library for native text rendering appear in the newly created <code>install</code> folder. You are done now; you can continue on the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>.</p>
+				
+				<h3 id="manually-java">Manually compiling the Java code</h3>
+				<p>If you do not want to use Maven, you can of course also compile the source code manually.</p>
 				
 				<p>You can either import the source code into your IDE of choice (Eclipse or Netbeans for example) to compile it, or use the <code>javac</code> command on the terminal. Compilation should be straightforward, because there are no dependencies except for the core Java libraries (and JUnit if you are compiling the <code>test</code> folder too). To create a JAR file for Joxy, you can use the <code>jar</code> command.</p>
 				
-				<p>We intend to provide an Ant script soon, such that compiling will be easier.</p>
+				<p>If you don't want to use native text rendering, you are done now and you can continue to the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>. Else, please continue to the next section.</p>
 				
-				<p>To test your compiled code, you can start <code>test.TestGUI</code>. That will launch some GUI that will load Joxy and display some of the many Java Swing components. (This only works if you have compiled the <code>test</code> folder.)</p>
-				
-				<h3>Compiling the native text rendering</h3>
-				<p>To use native text rendering, you will also have to compile the C++ code in the src folder to a shared library (a *.so file). This can be done using <code>gcc</code>. To this end, we have created a little script, <code>compile.sh</code>, in the <code>src</code> folder. The aim of this script is to assist you and make it as easy as possible to enable native text rendering. We are still working on this, so please, if you have suggestions or noted a bug, report this via the <a target="_blank" href="http://sourceforge.net/p/joxy/discussion/">forum</a> on SourceForge.</p>
+				<h3>Manually compiling the native text rendering</h3>
+				<p>To use native text rendering, you will also have to compile the C++ code in the src folder to a shared library (a *.so file). This can be done using <code>gcc</code>. To this end, we have created a script, <code>compile.sh</code>, in the <code>src</code> folder. The aim of this script is to assist you and make it as easy as possible to enable native text rendering. We are still working on this, so please, if you have suggestions or noted a bug, report this via the <a target="_blank" href="http://sourceforge.net/p/joxy/discussion/">forum</a> on SourceForge.</p>
 				
 				<p>You will need the Qt 4 development packages before compiling.<span class="distro debian"> For Debian and Ubuntu, this package is called <code>libqt4-dev</code>. Install it using <code>apt-get install libqt4-dev</code> if you don't have it already.</span></p>
 				
-				<span class="distro arch chakra"><p>Note: we have received reports that on Arch and Chakra the detection of your <code>JAVA_HOME</code> folder doesn't work. Please adjust the script if it doesn't work for you.</p></span>
+				<span class="distro arch chakra"><p>Note: we have received reports that on Arch and Chakra the detection of your <code>JAVA_HOME</code> folder may not work. Please set the <code>$JAVA_HOME</code> environment variable to your Java home folder manually in such a case, like this:
+<pre>export JAVA_HOME='/usr/lib/jvm/java-7-openjdk'</pre>
+				</p></span>
 				
 				<p>An example of how to compile the shared library (we suppose the current working directory is the root of the Git repository):
 <pre>$ cd src/
