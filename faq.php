@@ -38,7 +38,7 @@
 
 			<p><strong>What systems are supported?</strong><br />
 			Officially, only KDE systems on Linux are supported at the moment.<br />
-			We only test Joxy on two systems (Debian Testing and Ubuntu 12.04), but it should work with other distributions too. If you find problems please report them. Also, if you use another distribution and the installation/compilation instructions are incorrect for this distribution, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">report</a> that too, so we can change them.</p>
+			We only test Joxy on two systems (Debian Testing and Chakra), but it should work with other distributions too. If you find problems please report them. Also, if you use another distribution and the installation/compilation instructions are incorrect for this distribution, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">report</a> that too, so we can change them.</p>
 
 			<p><strong>Will other operating systems be supported in the future?</strong><br />
 			Version 0.2.0 should run on other platforms (Windows/Mac/Linux without KDE) too, but we have not tested that very thoroughly. The most important problem is the absence of the Oxygen icons.</p>
