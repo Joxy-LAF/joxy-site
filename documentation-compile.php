@@ -76,7 +76,7 @@ Switched to branch 'master'</pre>
 				</p>
 				
 				<h3 id="using-maven">Using Maven</h3>
-				<p>Maven is a build automation tool, that takes care of the entire compilation and packaging process. Joxy will, since version 0.3.0, be distributed as a Maven project, so you can use Maven to build it. <b>Temporary note: at this moment we are still preparing the switch to a Maven project structure in Git. You need to switch to the <code>maven-conversion</code> branch. For example, use <code>git checkout maven-conversion</code>. This branch will be merged into <code>master</code> soon.</b></p>
+				<p>Maven is a build automation tool, that takes care of the entire compilation and packaging process. Joxy will, since version 0.3.0, be distributed as a Maven project, so you can use Maven to build it.</p>
 				
 				<p>You will first need to install Maven. Visit <a href="http://maven.apache.org/">the Maven website</a> for more information. <span class="distro debian">(For Debian and Ubuntu, you can also just install the <code>maven</code> package.)</span></p>
 				
