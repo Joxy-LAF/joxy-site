@@ -32,7 +32,7 @@
       <span class="distro chakra">
         <p>For Chakra Linux, Joxy is available as a package in the Chakra Community Repository (CCR).</p>
         
-        <p>The package name is <code>joxy-git</code>. See <a href="http://www.chakra-linux.org/ccr/packages.php?ID=3874">this page</a>. With the package, you will automatically get the latest Git version, which may not be stable.</p>
+        <p>The package name is <code>joxy-git</code>. See <a href="http://www.chakra-linux.org/ccr/packages.php?O=0&K=joxy-git&do_Search=+Go+">this page</a>. With the package, you will automatically get the latest Git version, which may not be stable.</p>
         
         <p>To install this package, you can use the <code>ccr</code> command:
 <pre>ccr -S joxy-git</pre>
