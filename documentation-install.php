@@ -7,7 +7,7 @@
     <div class="span12">
       <p>Please choose your distribution. The information on this page will be automatically updated then.</p>
       <center>
-        <div class="btn-group">
+        <div id="distro-chooser" class="btn-group">
           <a class="btn" id="distro-linux" onclick="updateDistribution('linux')">Linux (generic)</a>
           <a class="btn" id="distro-debian" onclick="updateDistribution('debian')">Debian / Ubuntu</a>
           <a class="btn" id="distro-arch" onclick="updateDistribution('arch')">Arch Linux</a>

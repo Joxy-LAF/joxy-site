@@ -55,7 +55,7 @@
 ?>
 			</div>
 <?php if ($aPage === 'documentation') : ?>
-			<div class="btn-group upper-navbar lower-navbar">
+			<div id="documentation-navigation" class="btn-group upper-navbar lower-navbar">
 <?php
 	$aMenuItems = array(
 		'download' => 'Download',
