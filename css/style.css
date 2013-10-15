@@ -1,96 +1,108 @@
 code {
-	color: #636363;
+  color: #636363;
 }
 
 p {
-	-moz-hyphens: auto;
-	-webkit-hyphens: auto;
-	-o-hyphens: auto;
-	hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 
 #konqi-duke-image {
-	background-image: url("../img/konqi-duke.png");
-	background-repeat: no-repeat;
-	background-position: bottom left;
-	position: fixed;
-	left: -100px;
-	bottom: 0;
-	width: 650px;
-	height: 323px;
-	z-index: -1;
-	margin: 0;
-	padding: 0;
-	opacity: 0.1;
-	overflow: hidden;
+  background-image: url("../img/konqi-duke.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: fixed;
+  left: -100px;
+  bottom: 0;
+  width: 650px;
+  height: 323px;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  opacity: 0.1;
+  overflow: hidden;
 }
 
 .btn-center-container {
-	width: 75%;
-	margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .btn-group-wide {
-	width: 100%;
+  width: 100%;
 }
 
 .carousel {
-	border: 1px solid #D3D7CF;
+  border: 1px solid #D3D7CF;
 }
 
 .carousel .item {
-	border: 1px solid #D3D7CF;
+  border: 1px solid #D3D7CF;
 }
 
 .carousel-fixed-height {
-	height: 600px;
+  height: 600px;
+}
+
+.credits {
+  color: #ADB0AA;
+  margin: 0.4em 0 0;
+  width: 50%;
+}
+
+.credits.distro {
+  margin-bottom: 0.4em;
+  width: 60%;
 }
 
 .faq-answer {
-	margin-left: 10px;
-	padding-left: 10px;
-	border-left: 1px solid #D3D7CF;
-	font-style: italic;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #D3D7CF;
+  font-style: italic;
 }
 
 .faq-version {
-	color: #204A87;
+  color: #204A87;
 }
 
 .footer {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 .lower-navbar {
-	position: relative;
-	top: -5px;
+  position: relative;
+  top: -5px;
 }
 
 .muted {
-	color: #ADB0AA;
+  color: #ADB0AA;
 }
 
+.credits a,
 .muted a {
-	color: #82C4FF;
+  color: #82C4FF;
 }
 
 .screenshot {
-	margin: 0 auto;
-	padding: 0 0 100px 0;
+  margin: 0 auto;
+  padding: 0 0 100px 0;
 }
 
 .topspace {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 .upper-navbar > .btn {
-	border-top: 0;
+  border-top: 0;
 }
 
 .upper-navbar > .btn:first-child {
-	border-top-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .upper-navbar > .btn:last-child {
-	border-top-right-radius: 0;
+  border-top-right-radius: 0;
 }
