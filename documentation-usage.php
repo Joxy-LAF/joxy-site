@@ -15,7 +15,7 @@
           <a class="btn" id="distro-windows" onclick="updateDistribution('windows')">Windows / Mac</a>
         </div>
         <div>
-          <p class="credits distro arch">For Arch Linux, <a href="http://sourceforge.net/u/decorian/profile/">Dominic</a> wrote some of the instructions on this page. Thanks!</p>
+          <p class="credits distro arch">The instructions for Arch Linux on this page have been contributed by <a href="http://sourceforge.net/u/decorian/profile/">Dominic</a>. Thanks!</p>
           <p class="credits">Did you spot a mistake, want to have your distribution added to the above list or have other suggestions or questions, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">let us know</a>!</p>
         </div>
       </center>
@@ -51,7 +51,7 @@
       <p>
         If you want this, locate this file.
         <span class="distro debian">On Debian and Ubuntu you can find it in <code>/etc/java-7-openjdk/swing.properties</code> or something like that.</span>
-        <span class="distro arch">On Arch Linux, it is advised that you create a file <code>/etc/java-7-openjdk/swing.properties</code> (or something like that) and then link to that file from the <code>$JRE/lib/</code> directory. Here, <code>$JRE</code> is the path to the installed JRE on your system. More instructions on how to locate this directory can be found <a href="/joxy/documentation/install#arch">here</a>.</span>
+        <span class="distro arch">On Arch Linux, it is advised that you create a file <code>/etc/java-7-openjdk/swing.properties</code> (or something like that) and then link to that file from the <code>$JRE/lib/</code> directory. Here, <code>$JRE</code> is the path to the installed JRE on your system. More instructions on how to locate this directory can be found <a href="<?= APP_PREFIX ?>/documentation/install#arch">here</a>.</span>
         <span class="distro chakra">On Chakra you can find it in <code>/usr/lib/jvm/java-7-openjdk/jre/lib/swing.properties</code> or something like that.</span>
         <span class="distro windows">On Windows, you can find it in <code>C:\Program Files\Java\jre1.7.0_21\lib\swing.properties</code> or something like that.</span>
         If the file doesn't exist yet, you can create it.

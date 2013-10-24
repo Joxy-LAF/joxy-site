@@ -15,17 +15,24 @@
           <a class="btn" id="distro-windows" onclick="updateDistribution('windows')">Windows / Mac</a>
         </div>
         <div>
+          <p class="credits distro arch">The instructions for Arch Linux on this page have been contributed by <a href="http://sourceforge.net/u/decorian/profile/">Dominic</a>. Thanks!</p>
           <p class="credits">Did you spot a mistake, want to have your distribution added to the above list or have other suggestions or questions, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">let us know</a>!</p>
         </div>
       </center>
       
       <h3>As a package</h3>
       <span class="distro arch">
-        <p>For Arch Linux, Joxy is available as a package in the Arch User Repository (AUR).</p>
-        
-        <p>The package name is <code>java-swing-joxy-git</code>. See <a href="https://aur.archlinux.org/packages/java-swing-joxy-git/">this page</a>. With the package, you will automatically get the latest Git version, which may not be stable.</p>
-        
-        <p><b>To do: add specific instructions to install this package. (If you are an Arch user, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">contribute</a> them!)</b></p>
+        <p>Joxy is available on the Arch User Repository (AUR) as package <a href="https://aur.archlinux.org/packages/java-swing-joxy-git/">java-swing-joxy-git</a>. This can be easily installed using your favourite AUR helper or manually. If you are unsure please see the Arch wiki regarding the <a href="https://wiki.archlinux.org/index.php/AUR">AUR</a> and the <a href="https://wiki.archlinux.org/index.php/AUR_Helpers">helpers</a>. For completeness I include some brief instructions on how to install from the AUR.</p>
+
+        <p>To manually install from the AUR, download the <a href="https://aur.archlinux.org/packages/ja/java-swing-joxy-git/java-swing-joxy-git.tar.gz">tarball</a> and extract it into its own directory. Then go into the directory where you find the file <code>PKGBUILD</code>. It is always advised at this point to check the <code>PKGBUILD</code> to be sure it is ok and will not harm your computer. Make the package by running:</p>
+
+        <pre>makepkg</pre>
+
+        <p>inside the folder. This will create a pacman package, which is installed using:</p>
+
+        <pre>sudo pacman -U java-swing-joxy-git_someversion.pkg.tar.xz</pre>
+
+        <p>This will install the package on your system. If you installed it manually, don't forget to check for updates because it will require a similar process to manually update. Personally I recommend using a helper for AUR packages.</p>
         
         <p>If you don't want to use this package, for example because you rather want to use a stable version of Joxy, it is of course also possible to get Joxy manually. You can follow the following instructions for that.</p>
       </span>

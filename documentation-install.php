@@ -15,7 +15,7 @@
           <a class="btn" id="distro-windows" onclick="updateDistribution('windows')">Windows / Mac</a>
         </div>
         <div>
-          <p class="credits distro arch">For Arch Linux, <a href="http://sourceforge.net/u/decorian/profile/">Dominic</a> wrote most of the instructions on this page. Thanks!</p>
+          <p class="credits distro arch">The instructions for Arch Linux on this page have been contributed by <a href="http://sourceforge.net/u/decorian/profile/">Dominic</a>. Thanks!</p>
           <p class="credits">Did you spot a mistake, want to have your distribution added to the above list or have other suggestions or questions, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">let us know</a>!</p>
         </div>
       </center>
@@ -47,7 +47,7 @@
       <div class="distro chakra"><p><b>To do: specific information for Chakra on how to do this. Do you have that information? Please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">contribute</a>!</b></p></div>
       <div class="distro windows"><p>For Windows, depending on your installation, the JRE will be in something like <code>C:\Program Files\Java\jre1.6.0_22</code>.</p></div>
       
-      <p>Go to this folder and enter the <span class="distro linux debian arch chakra"><code>lib/ext</code></span> <span class="distro windows"><code>lib\ext</code></span> subdirectory. You should now copy the Joxy JAR file to this place. Note: you shouldn't put the JAR file in the <code>lib</code> folder of your JDK instead of the JRE, since Java doesn't recognize it then. You can recognize you have the correct path if <code>jre</code> is path of the path name.</p>
+      <p>Go to this folder and enter the <span class="distro linux debian arch chakra"><code>lib/ext</code></span> <span class="distro windows"><code>lib\ext</code></span> subdirectory. You should now copy the Joxy JAR file to this place. Note: you shouldn't put the JAR file in the <code>lib</code> folder of your JDK instead of the JRE, since Java doesn't recognize it then. You can recognize you have the correct path if <code>jre</code> is part of the path name.</p>
       
       <h3>Installing the native text rendering library</h3>
       <span class="distro linux debian arch chakra">

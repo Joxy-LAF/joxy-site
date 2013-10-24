@@ -15,39 +15,46 @@
           <a class="btn" id="distro-windows" onclick="updateDistribution('windows')">Windows / Mac</a>
         </div>
         <div>
+          <p class="credits distro arch">The instructions for Arch Linux on this page have been contributed by <a href="http://sourceforge.net/u/decorian/profile/">Dominic</a>. Thanks!</p>
           <p class="credits">Did you spot a mistake, want to have your distribution added to the above list or have other suggestions or questions, please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">let us know</a>!</p>
         </div>
       </center>
       
-      <span class="distro windows">
+      <div class="distro windows">
         <h3>Compilation on non-Linux platforms</h3>
         <p>Compiling Joxy is probably possible on Windows and Mac, but we haven't tested this and we don't have specific instructions for those platforms.</p>
-      </span>
+      </div>
       
-      <span class="distro linux debian arch chakra">
+      <div class="distro arch">
+        <h3>Before you start</h3>
+        <p>Whilst it is possible to manually compile and install yourself, on Arch it is recommended to use the AUR package. This is because using the AUR package means you get the latest <code>git</code> version and you compile it on your own computer anyway. It also means that <code>pacman</code> has control over every file and package installed on your system, even if that package was created by manually compiling a program via an AUR build script.</p>
+        <p>If you want to use the package, please continue reading <a href="<?= APP_PREFIX ?>/documentation/download/#arch">here</a>.</p>
+      </div>
+      
+      <div class="distro linux debian arch chakra">
         <h3>Getting the source</h3>
         <p>If you want to compile Joxy yourself, you have to obtain the source from our Git repository. You can access this repository at SourceForge <a target="_blank" href="http://sourceforge.net/p/joxy/code/">here</a>.
         
-        <p>To use Git, you will need to have it installed on your computer. This can be done with the package manager of your distribution. <span class="distro debian">For Debian and Ubuntu, the package name is simply <code>git</code>, so use <code>apt-get install git</code> to install it.</span> <span class="distro arch">For Arch Linux, the package name is simply <code>git</code>, so use <code>pacman -S git</code> to install it. <b>To do: test this. Did you? Please <a href="http://sourceforge.net/p/joxy/discussion/general/thread/158b3905/">contribute</a>!</b></span> <span class="distro chakra">For Chakra Linux, the package name is simply <code>git</code>, so use <code>sudo pacman -S git</code> to install it.</span></p>
+        <p>To use Git, you will need to have it installed on your computer. This can be done with the package manager of your distribution. <span class="distro debian">For Debian and Ubuntu, the package name is simply <code>git</code>, so use <code>apt-get install git</code> to install it.</span> <span class="distro arch">For Arch Linux, the package name is simply <code>git</code>, so use <code>sudo pacman -Sy git</code> to install it.</span> <span class="distro chakra">For Chakra Linux, the package name is simply <code>git</code>, so use <code>sudo pacman -S git</code> to install it.</span></p>
         
         <p>Then you can create a folder to store the source code in, do this at a location you like. Preferably do not work as the root user: for security reasons we do not recommend to run our code with root privileges.</p>
         
-        <p>At the SourceForge repository page, you can get a command to clone the repository to your local computer. At the moment of writing, this command is
+        <p>At the SourceForge repository page, you can get a command to clone the repository to your local computer. At the moment of writing, this command is</p>
         
         <pre>git clone git://git.code.sf.net/p/joxy/code somename</pre>
         
-        where <code>somename</code> is the name of the directory to put the source in. Execute this command. Now the source code is available for you to compile in the folder you created.</p>
+        <p>where <code>somename</code> is the name of the directory to put the source in. Execute this command. Now the source code is available for you to compile in the folder you created.</p>
         
         <h3>Get a specific version of Joxy</h3>
         <p>It may be that you want to compile a specific version of Joxy yourself, for example the latest stable release, or an older release for testing purposes. Now, this is possible by using the tags provided by Git. We use Git tags to identify versions of Joxy. Unfortunately, we figured out how to do this only after having released version 0.0.2, so the first tag available is for version 0.0.3.</p>
         
-        <p>The first thing you may want to do, is see what versions you have to choose from. This can be done as follows:
+        <p>The first thing you may want to do, is see what versions you have to choose from. This can be done as follows:</p>
 <pre>$ git tag
 0.0.3
 0.1.0</pre>
-        Please note here that the given output is an example, there may be more versions available when you run it.</p>
+        <p>Please note here that the given output is an example, there may be more versions available when you run it.</p>
         
-        <p>Now, you can get the code for a version listed by executing <code>$ git checkout [version]</code>. For example, going to version 0.1.0 could look like this:
+        <p>Now, you can get the code for a version listed by executing <code>$ git checkout [version]</code>. For example, going to version 0.1.0 could look like this:</p>
 <pre>$ git checkout 0.1.0
 Note: checking out '0.1.0'.
 
@@ -60,13 +67,13 @@ do so (now or later) by using -b with the checkout command again. Example:
 
   git checkout -b new_branch_name
 
-HEAD is now at b7cb104... Merge branch 'master' of ssh://git.code.sf.net/p/joxy/code</pre></p>
+HEAD is now at b7cb104... Merge branch 'master' of ssh://git.code.sf.net/p/joxy/code</pre>
 
-        <p>When you are done, you can revert to the newest code as follows:
+        <p>When you are done, you can revert to the newest code as follows:</p>
 <pre>$ git checkout master 
 Previous HEAD position was b7cb104... Merge branch 'master' of ssh://git.code.sf.net/p/joxy/code
 Switched to branch 'master'</pre>
-        After executing this, you are up-to-date again. Please refer to the excellent <a target="_blank" href="http://git-scm.com/docs">Git documentation</a> for more details about tagging, checking out and using Git in general.</p>
+        <p>After executing this, you are up-to-date again. Please refer to the excellent <a target="_blank" href="http://git-scm.com/docs">Git documentation</a> for more details about tagging, checking out and using Git in general.</p>
         
         <h3>Compiling the source code</h3>
         <p>To compile, you will of course need the Java Development Kit. We test Joxy with OpenJDK 7. (OpenJDK 6 will probably work as well, but since Joxy 0.2.0 we do not test on that platform anymore.)</p>
@@ -83,9 +90,9 @@ Switched to branch 'master'</pre>
         
         <p>You will first need to install Maven. Visit <a href="http://maven.apache.org/">the Maven website</a> for more information. <span class="distro debian">(For Debian and Ubuntu, you can also just install the <code>maven</code> package.)</span></p>
         
-        <p>Now open a terminal, and go to the <code>joxy</code> folder in the Joxy source tree. Enter the following command:
+        <p>Now open a terminal, and go to the <code>joxy</code> folder in the Joxy source tree. Enter the following command:</p>
 <pre>mvn package</pre>
-        If all goes well, the Joxy JAR file and the library for native text rendering appear in the newly created <code>install</code> folder. You are done now; you can continue on the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>.</p>
+        <p>If all goes well, the Joxy JAR file and the library for native text rendering appear in the newly created <code>install</code> folder. You are done now; you can continue on the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>.</p>
         
         <h3 id="manually-java">Manually compiling the Java code</h3>
         <p>If you do not want to use Maven, you can of course also compile the source code manually.</p>
@@ -99,11 +106,11 @@ Switched to branch 'master'</pre>
         
         <p>You will need the Qt 4 development packages before compiling.<span class="distro debian"> For Debian and Ubuntu, this package is called <code>libqt4-dev</code>. Install it using <code>apt-get install libqt4-dev</code> if you don't have it already.</span></p>
         
-        <span class="distro arch chakra"><p>Note: we have received reports that on Arch and Chakra the detection of your <code>JAVA_HOME</code> folder may not work. Please set the <code>$JAVA_HOME</code> environment variable to your Java home folder manually in such a case, like this:
+        <div class="distro arch chakra"><p>Note: we have received reports that on Arch and Chakra the detection of your <code>JAVA_HOME</code> folder may not work. Please set the <code>$JAVA_HOME</code> environment variable to your Java home folder manually in such a case, like this:</p>
 <pre>export JAVA_HOME='/usr/lib/jvm/java-7-openjdk'</pre>
-        </p></span>
+        </div>
         
-        <p>An example of how to compile the shared library (we suppose the current working directory is the root of the Git repository):
+        <p>An example of how to compile the shared library (we suppose the current working directory is the root of the Git repository):</p>
 <pre>$ cd joxy/src/main/scripts/
 $ ./compile.sh
 compile.sh: [I] Multiple Java installations were found:
@@ -119,7 +126,7 @@ compile.sh: [I]   /usr/lib/jni
 compile.sh: [I]   /lib
 compile.sh: [I]   /usr/lib
 compile.sh: [I] You should pick one of these folders to move the shared library to.</pre>
-        Note that the script presents a list of directories you can put the compiled library in. Further information about this will be given at the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>.</p>
-      </span>
+        <p>Note that the script presents a list of directories you can put the compiled library in. Further information about this will be given at the <a href="<?= APP_PREFIX ?>/documentation/install/">page about installing Joxy</a>.</p>
+      </div>
     </div>
   </div>
