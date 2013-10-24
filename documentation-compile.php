@@ -31,6 +31,12 @@
         <p>If you want to use the package, please continue reading <a href="<?= APP_PREFIX ?>/documentation/download/#arch">here</a>.</p>
       </div>
       
+      <div class="distro chakra">
+        <h3>Before you start</h3>
+        <p>Whilst it is possible to manually compile and install yourself, on Chakra it is recommended to use the CCR package. This is because using the CCR package means you get the latest <code>git</code> version and you compile it on your own computer anyway. It also means that <code>pacman</code> has control over every file and package installed on your system, even if that package was created by manually compiling a program via an CCR build script.</p>
+        <p>If you want to use the package, please continue reading <a href="<?= APP_PREFIX ?>/documentation/download/#chakra">here</a>.</p>
+      </div>
+      
       <div class="distro linux debian arch chakra">
         <h3>Getting the source</h3>
         <p>If you want to compile Joxy yourself, you have to obtain the source from our Git repository. You can access this repository at SourceForge <a target="_blank" href="http://sourceforge.net/p/joxy/code/">here</a>.
