@@ -30,7 +30,7 @@
 
         <p>inside the folder. This will create a pacman package, which is installed using:</p>
 
-        <pre>sudo pacman -U java-swing-joxy-git_someversion.pkg.tar.xz</pre>
+        <pre>sudo pacman -U java-swing-joxy-git_<b>someversion</b>.pkg.tar.xz</pre>
 
         <p>This will install the package on your system. If you installed it manually, don't forget to check for updates because it will require a similar process to manually update. Personally I recommend using a helper for AUR packages.</p>
         
